@@ -1,0 +1,70 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    margin: 0rem auto;
+    display: flex;
+    width: 40%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.search {
+    font-size: 1rem;
+    padding: 10px 1rem;
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search:hover {
+    background-color: hsl(348, 83%, 41%);
+}
+
+.convert {
+    float: right;
+    font-size: 1rem;
+    padding: 10px 3rem;
+    margin: 2rem 3rem 2rem 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.convert:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.active {
+    font-weight: 700;
+}
