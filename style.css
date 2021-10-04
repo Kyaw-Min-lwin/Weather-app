@@ -7,10 +7,11 @@
 body {
     min-height: 100vh;
     font-size: 16px;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 header {
-    background-color: black;
+    background-color: hsl(249, 88%, 20%);
     width: 100%;
 }
 
@@ -22,7 +23,7 @@ nav {
 }
 
 form {
-    margin: 0rem auto;
+    margin: 0rem;
     display: flex;
     width: 40%;
 }
@@ -30,7 +31,14 @@ form {
 input {
     width: 100%;
     border: none;
+    border-radius: 5px 0 0 5px;
     outline: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+::placeholder {
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 button {
@@ -53,12 +61,13 @@ button {
 }
 
 .convert {
-    float: right;
     font-size: 1rem;
     padding: 10px 3rem;
-    margin: 2rem 3rem 2rem 0;
+    margin: 2rem 0rem 2rem 5rem;
     cursor: pointer;
     outline: none;
+    border: none;
+    font-weight: 100;
 }
 
 .convert:hover {

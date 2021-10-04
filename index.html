@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather app</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <body>
+        <header>
+            <nav>
+                <form>
+                    <input type="text" placeholder="Enter a city or country" />
+                    <button class="search">Search</button>
+                </form>
+                <button class="convert">
+                    <span class="active">&deg;C </span>/ <span>&deg;F</span>
+                </button>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <nav>
-            <form>
-                <input type="text" placeholder="">
-                <button class="search">Search</button>
-            </form>
-            <button class="convert"><span class="active">&deg;C </span>/ <span>&deg;F</span></button>
-        </nav>
-    </header>
-    <main>
-        <article class="today-weather">
-            <div></div>
-            <div></div>
-        </article>
-        <article class="misc">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </article>
-        <article class="weekly-weather"></article>
-    </main>
-    <script src="./main.js"></script>
-</body>
+        <main>
+            <article class="today-weather">
+                <div>
+                    <h1 class="city">London</h1>
+                    <h2 class="weather">Clouds</h2>
+                    <h2 class="temp">27&deg;C</h2>
+                    <h3 class="high-low">H:32&deg;C L24&deg;C</h3>
+                </div>
+                <div></div>
+            </article>
 
+            <article class="misc">
+                <div>
+                    <p class="desc">Sunrise</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">Sunset</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">Chances of rain</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">Feels like</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">Pressure</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">Humidity</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">UV Index</p>
+                    <p class="value"></p>
+                </div>
+
+                <div>
+                    <p class="desc">Windspeed</p>
+                    <p class="value"></p>
+                </div>
+            </article>
+
+            <article class="weekly-weather">
+                <table></table>
+            </article>
+        </main>
+        <script src="./main.js"></script>
+    </body>
 </html>
