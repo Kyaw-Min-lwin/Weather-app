@@ -74,6 +74,24 @@ button {
     background-color: hsl(0, 0%, 80%);
 }
 
+.city {
+    text-transform: capitalize;
+}
+
 .active {
     font-weight: 700;
+}
+
+td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
 }
